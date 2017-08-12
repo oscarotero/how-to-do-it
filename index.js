@@ -21,6 +21,7 @@ if (!words.length) {
 
 const data = {};
 data.git = require('./data/git.json');
+data.osx = require('./data/osx.json');
 
 let result = [];
 

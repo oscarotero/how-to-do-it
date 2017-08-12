@@ -1,0 +1,7 @@
+[
+	{
+		"title": "Find a process listening to any tcp port",
+		"command": "lsof -i tcp:<port>",
+		"info": "For example to find the process using the port 3000: `lsoft -i tcp:3000`"
+	}
+]
