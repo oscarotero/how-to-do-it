@@ -1,0 +1,16 @@
+{
+  "name": "how-to-do-it",
+  "version": "1.0.0",
+  "description": "Tell me how to do things in cli",
+  "main": "index.js",
+  "bin": {
+    "how-to": "index.js"
+  },
+  "author": "Oscar Otero",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "figures": "^2.0.0",
+    "minimist": "^1.2.0"
+  }
+}

@@ -1,0 +1,106 @@
+[
+	{
+		"title": "Undo latest commit",
+		"command": "git reset --soft HEAD^"
+	},
+	{
+		"title": "Undo the changes of any commit",
+		"command": "git revert <commit>",
+		"info": "This creates a new commit to revert the changes of a particular commit"
+	},
+	{
+		"title": "Undo the changes of many commits",
+		"command": "git revert <from-commit>..<to-commit>",
+		"info": "This creates a new commit reverting the changes of several commits"
+	},
+	{
+		"title": "Undo the latest merge",
+		"command": "git reset --merge ORIG_HEAD",
+		"info": "This command undo the latest merge if it has not pushed"
+	},
+	{
+		"title": "Merge a branch using our changes in case of conflict",
+		"command": "git merge <branch> -s ours",
+		"info": "This command merge two branches. On conflicts, keeps the changes of the current branch."
+	},
+	{
+		"title": "Discard changes for a particular file after commit",
+		"command": "git reset HEAD <file>"
+	},
+	{
+		"title": "Unstage the current staged changes",
+		"command": "git reset"
+	},
+	{
+		"title": "Create, fetch a remote branch and switch to it",
+		"command": "git checkout --track <remote>/<branch>",
+		"info": "This command create a local branch using a remote branch not tracked before and switch to it. For example: `git checkout --track origin/feature-awesome`"
+	},
+	{
+		"title": "Remove a file from git but not from disc",
+		"command": "git rm --cached <file>"
+	},
+	{
+		"title": "Reapply an old commit again",
+		"command": "git cherry-pick <commit>"
+	},
+	{
+		"title": "Apply a commit from a different local repository",
+		"command": "git --git-dir=<.git-directory> format-patch -k -1 --stdout <commit> | git am -3 -k",
+		"info": "Example: `git --git-dir=../other-repo/.git format-patch -k -1 --stdout a9fbb5e9e9a65793891f4438a766575cce87a935 | git am -3 -k`"
+	},
+	{
+		"title": "Ignore the changes of a particular file",
+		"command": "git update-index --assume-unchanged <file>",
+		"info": "This command makes git ignore the local changes of a particular file in order to avoid be commited accidentally"
+	},
+	{
+		"title": "Restore ignoring the changes of a particular file",
+		"command": "git update-index --no-assume-unchanged <file>"
+	},
+	{
+		"title": "List all 'assume-unchanged' files",
+		"command": "git ls-files -v|grep '^h'"
+	},
+	{
+		"title": "Display who did the latest change in each line (ignoring whitespaces)",
+		"command": "git blame <filename> -w"
+	},
+	{
+		"title": "Remove all local branches removed in remote",
+		"command": "git fetch <remote> --prune",
+		"info": "This removes all local branches not existing in the remote repository"
+	},
+	{
+		"title": "Remove untracked local files and folders",
+		"command": "git clean -fd",
+		"info": "This removes the files and folders in the filesystem that are not tracked by git"
+	},
+	{
+		"title": "Remove a remote branch",
+		"command": "git push <remote> --delete <branch>",
+		"info": "Example: `git push origin --delete feat-awesome`"
+	},
+	{
+		"title": "Remove a remote tag",
+		"command": [
+			"git tag -d <tag>",
+			"git push origin :refs/tags/<tag>"
+		]
+	},
+	{
+		"title": "Go to an old commit",
+		"command": "git read-tree <commit>",
+		"info": "Display the git repository in a specific history point"
+	},
+	{
+		"title": "Configure gitignore globally",
+		"command": "git config --global core.excludesfile '~/.gitignore'",
+		"info": "This configure git to use the same .gitignore file in all your repositories. Useful for OS dependent files, like .DS_Store in macOS"
+	},
+	{
+		"title": "Configure the default text editor",
+		"command": "git config --global core.editor <editor-command>",
+		"info": "This configure git to use your favorite text editor instead the default (usually vi). For example, to use sublime text: `git config --global core.editor 'subl'`"
+	}
+]
