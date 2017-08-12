@@ -5,7 +5,7 @@
 const minimist = require('minimist');
 const chalk = require('chalk');
 const figures = require('figures');
-const update = require('update-notifier');
+const updateNotifier = require('update-notifier');
 const pkg = require('./package.json');
 const argv = minimist(process.argv.slice(2));
 const words = argv._.map(word => word.toLowerCase());
