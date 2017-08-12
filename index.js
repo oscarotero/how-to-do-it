@@ -10,7 +10,7 @@ const pkg = require('./package.json');
 const argv = minimist(process.argv.slice(2));
 const words = argv._.map(word => word.toLowerCase());
 
-updateNotifier({pkg}).notify();
+updateNotifier({ pkg }).notify();
 
 if (!words.length) {
     console.log(
@@ -113,6 +113,8 @@ result.slice(0, 10).forEach(line => {
 });
 
 function printCommand(command) {
-	command = command.replace(/<[\w-]+>/g, match => chalk.gray.underline(match));
+    command = command.replace(/<[\w-]+>/g, match =>
+        chalk.gray.underline(match)
+    );
     console.log(`  ${command}`);
 }
