@@ -1,0 +1,7 @@
+[
+	{
+		"title": "Download a remote mysql database in local",
+		"command": "mysqldump -h <host> -u<user> -p<password> <database> | mysql -u<user> <database>",
+		"info": "This script creates a dump of a remote database and execute locally.\nFor example: `mysqldump -h example.com -uuser -p1234 my_db | mysql -uroot local_db`"
+	}
+]

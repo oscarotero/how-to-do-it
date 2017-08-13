@@ -7,7 +7,7 @@ const chalk = require('chalk');
 const figures = require('figures');
 const updateNotifier = require('update-notifier');
 const pkg = require('./package.json');
-const argv = minimist(process.argv.slice(2));
+const argv = minimist(process.argv.slice(2), { boolean: ['i'] });
 const words = argv._.map(word => word.toLowerCase());
 
 updateNotifier({ pkg }).notify();
@@ -22,6 +22,7 @@ if (!words.length) {
 const data = {};
 data.git = require('./data/git.json');
 data.osx = require('./data/osx.json');
+data.mysql = require('./data/mysql.json');
 
 let result = [];
 
@@ -106,7 +107,7 @@ result.slice(0, 10).forEach(line => {
     }
 
     if (info && argv.i) {
-        console.log(`  ${chalk.gray(info)}`);
+        printInfo(info);
     }
 
     console.log('');
@@ -117,4 +118,9 @@ function printCommand(command) {
         chalk.gray.underline(match)
     );
     console.log(`  ${command}`);
+}
+
+function printInfo(info) {
+    info = info.replace(/\n/g, match => '\n    ');
+    console.log(`  ${chalk.gray(figures.arrowRight + ' ' + info)}`);
 }
