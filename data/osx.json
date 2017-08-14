@@ -8,5 +8,10 @@
 		"title": "Download a directory from a remote server",
 		"command": "rsync -avzh <user>@<host>:<path> <dest>",
 		"info": "This command downloads a directory with all its content to a local directory using rsync.\nOnly files not existing in local will be downloaded"
+	},
+	{
+		"title": "Make a file executable",
+		"command": "chmod a+x <file>",
+		"info": "This command change the file permissions allowing to be executed"
 	}
 ]
