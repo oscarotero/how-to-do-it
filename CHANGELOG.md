@@ -19,4 +19,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 First version
 
-[1.0.1]: https://github.com/middlewares/access-log/compare/v1.0.0...v1.0.1
+[1.0.1]: https://github.com/oscarotero/how-to-do-it/compare/v1.0.0...v1.0.1
