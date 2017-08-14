@@ -67,9 +67,9 @@
 		"command": "git blame <filename> -w"
 	},
 	{
-		"title": "Remove all local branches removed in remote",
+		"title": "Remove all local branches missing in remote",
 		"command": "git fetch <remote> --prune",
-		"info": "This removes all local branches not existing in the remote repository"
+		"info": "This command removes all local branches not existing in the remote repository"
 	},
 	{
 		"title": "Remove untracked local files and folders",
