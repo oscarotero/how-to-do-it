@@ -1,6 +1,6 @@
 {
   "name": "how-to-do-it",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tell me how to do things in cli",
   "main": "index.js",
   "bin": {
