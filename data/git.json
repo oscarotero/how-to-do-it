@@ -90,8 +90,8 @@
 	},
 	{
 		"title": "Go to an old commit",
-		"command": "git read-tree <commit>",
-		"info": "Display the git repository in a specific history point"
+		"command": "git checkout <commit>",
+		"info": "Display the git repository in a specific history point.\nTo undo this and go back to the master branch: `git checkout master`"
 	},
 	{
 		"title": "Configure gitignore globally",
