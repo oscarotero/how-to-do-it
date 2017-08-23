@@ -96,7 +96,7 @@ console.log('');
 
 //Show only the first 10 results
 result.slice(0, 10).forEach(line => {
-    const { title, command, info } = line.command;
+    const { title, command, info, links } = line.command;
 
     console.log(figures.arrowRight, chalk.green(`${title}:`));
 
@@ -106,8 +106,8 @@ result.slice(0, 10).forEach(line => {
         printCommand(command);
     }
 
-    if (info && argv.i) {
-        printInfo(info);
+    if (argv.i) {
+        printInfo(info, links);
     }
 
     console.log('');
@@ -120,7 +120,15 @@ function printCommand(command) {
     console.log(`  ${command}`);
 }
 
-function printInfo(info) {
-    info = info.replace(/\n/g, match => '\n    ');
-    console.log(`  ${chalk.gray(figures.arrowRight + ' ' + info)}`);
+function printInfo(info, links) {
+    if (info) {
+        info = info.replace(/\n/g, match => '\n    ');
+        console.log(`  ${chalk.gray(figures.arrowRight + ' ' + info)}`);
+    }
+
+    if (Array.isArray(links)) {
+        links.forEach(link => {
+            console.log(`  ${chalk.gray.underline(figures.arrowRight + ' ' + link)}`);
+        })
+    }
 }

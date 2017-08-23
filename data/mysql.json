@@ -2,7 +2,10 @@
 	{
 		"title": "Download a remote mysql database using ssh",
 		"command": "ssh <user>@<host> \"mysqldump -hlocalhost -u<user> -p<password> <database>\" > <file>",
-		"info": "This script creates a dump of a remote database and save it locally.\nFor example: `ssh user@example.com \"mysqldump -hlocalhost -uuser -p1234 my_db\" > my_db.sql`"
+		"info": "This script creates a dump of a remote database and save it locally.\nFor example: `ssh user@example.com \"mysqldump -hlocalhost -uuser -p1234 my_db\" > my_db.sql`",
+		"links": [
+			"https://stackoverflow.com/questions/9821111/mysqldump-with-ssh-connection-in-shell-script"
+		]
 	},
 	{
 		"title": "Download and execute locally a remote mysql database using ssh",

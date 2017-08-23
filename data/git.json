@@ -1,7 +1,10 @@
 [
 	{
 		"title": "Undo latest commit",
-		"command": "git reset --soft HEAD^"
+		"command": "git reset --soft HEAD^",
+		"links": [
+			"https://stackoverflow.com/questions/37420642/how-to-undo-the-last-commit-in-git"
+		]
 	},
 	{
 		"title": "Undo the changes of any commit",
@@ -102,5 +105,10 @@
 		"title": "Configure the default text editor",
 		"command": "git config --global core.editor <editor-command>",
 		"info": "This configure git to use your favorite text editor instead the default (usually vi). For example, to use sublime text: `git config --global core.editor 'subl'`"
+	},
+	{
+		"title": "Display the different commits between two branches",
+		"command": "git log <branch> --not <base-branch>",
+		"info": "Example: `git log feature --not master`"
 	}
 ]
