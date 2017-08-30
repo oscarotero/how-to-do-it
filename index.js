@@ -114,7 +114,7 @@ result.slice(0, 10).forEach(line => {
 });
 
 function printCommand(command) {
-    command = command.replace(/<[\w-]+>/g, match =>
+    command = command.replace(/<[\w\.-]+>/g, match =>
         chalk.gray.underline(match)
     );
     console.log(`  ${command}`);
