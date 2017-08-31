@@ -51,6 +51,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 First version
 
+[1.1.0]: https://github.com/oscarotero/how-to-do-it/compare/v1.0.3...v1.1.0
 [1.0.3]: https://github.com/oscarotero/how-to-do-it/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/oscarotero/how-to-do-it/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/oscarotero/how-to-do-it/compare/v1.0.0...v1.0.1
