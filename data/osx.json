@@ -13,5 +13,12 @@
 		"title": "Make a file executable",
 		"command": "chmod a+x <file>",
 		"info": "This command change the file permissions allowing to be executed"
+	},
+	{
+		"title": "Display my IP address",
+		"command": "ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\\  -f2",
+		"links": [
+			"https://www.askdavetaylor.com/how_do_i_figure_out_my_ip_address_on_a_mac/"
+		]
 	}
 ]

@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## UNRELEASED
+## [1.1.0] - 2017-08-31
+
+### Added
+
+* Command to know the IP address
+* Allow to pass values to fill placeholders in the commands. For example, with `how-to remove local branches` you get the command `git fetch <remote> --prune` but `how-to remove local branches --remote=origin`, you get `git fetch origin --prune`.
 
 ### Fixed
 

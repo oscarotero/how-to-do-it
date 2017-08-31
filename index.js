@@ -114,9 +114,16 @@ result.slice(0, 10).forEach(line => {
 });
 
 function printCommand(command) {
-    command = command.replace(/<[\w\.-]+>/g, match =>
-        chalk.gray.underline(match)
-    );
+    command = command.replace(/<[\w\.-]+>/g, match => {
+        const name = match.slice(1, -1);
+
+        if (name in argv) {
+            return argv[name];
+        }
+
+        return chalk.gray.underline(match);
+    });
+
     console.log(`  ${command}`);
 }
 
