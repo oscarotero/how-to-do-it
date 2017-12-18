@@ -23,6 +23,7 @@ const data = {};
 data.git = require('./data/git.json');
 data.osx = require('./data/osx.json');
 data.mysql = require('./data/mysql.json');
+data.imagemagick = require('./data/imagemagick.json');
 
 let result = [];
 

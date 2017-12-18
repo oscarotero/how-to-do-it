@@ -1,0 +1,7 @@
+[
+	{
+		"title": "Convert transparent png images to jpg",
+		"command": "mogrify -format jpg -background <color> -alpha remove <pattern>",
+		"info": "This script creates a dump of a remote database and save it locally.\nFor example: `mogrify -format jpg -background white -alpha remove *.png`"
+	}
+]
