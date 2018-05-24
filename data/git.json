@@ -110,5 +110,9 @@
 		"title": "Display the different commits between two branches",
 		"command": "git log <branch> --not <base-branch>",
 		"info": "Example: `git log feature --not master`"
+	},
+	{
+		"title": "Display the global config values",
+		"command": "git config --global -l"
 	}
 ]
