@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 - Imagemagick commands
+- A way to include node and php packages in PATH
 
 ## [1.1.0] - 2017-08-31
 
@@ -57,6 +58,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## 1.0.0 - 2017-08-12
 
 First version
+
 
 [UNRELEASED]: https://github.com/oscarotero/how-to-do-it/compare/v1.1.0...HEAD
 [1.1.0]: https://github.com/oscarotero/how-to-do-it/compare/v1.0.3...v1.1.0
