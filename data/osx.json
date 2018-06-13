@@ -20,5 +20,10 @@
 		"links": [
 			"https://www.askdavetaylor.com/how_do_i_figure_out_my_ip_address_on_a_mac/"
 		]
+	},
+	{
+		"title": "Add node and php binaries of the current directoy",
+		"command": "export PATH=./vendor/bin:./node_modules/.bin:$PATH",
+		"info": "You can add this line to your source file, for example `~/.zshrc`"
 	}
 ]
