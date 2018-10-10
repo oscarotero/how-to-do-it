@@ -1,6 +1,6 @@
 {
   "name": "how-to-do-it",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Tell me how to do things in cli",
   "main": "index.js",
   "bin": {
@@ -9,9 +9,9 @@
   "author": "Oscar Otero",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.1.0",
+    "chalk": "^2.4.1",
     "figures": "^2.0.0",
     "minimist": "^1.2.0",
-    "update-notifier": "^2.2.0"
+    "update-notifier": "^2.5.0"
   }
 }

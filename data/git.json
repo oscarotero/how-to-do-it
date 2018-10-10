@@ -114,5 +114,72 @@
 	{
 		"title": "Display the global config values",
 		"command": "git config --global -l"
+	},
+	{
+		"title": "Search changes by content",
+		"command": "git log -S <term>"
+	},
+	{
+		"title": "Search changes by content",
+		"command": "git log -S <term>"
+	},
+	{
+		"title": "List all the conflicted files",
+		"command": "git diff --name-only --diff-filter=U"
+	},
+	{
+		"title": "Quickly switch to the previous branch",
+		"command": "git checkout -"
+	},
+	{
+		"title": "Modify the previous commit message",
+		"command": "git commit -v --amend"
+	},
+	{
+		"title": "Modify the previous commit author",
+		"command": "git commit --amend --author=<author>",
+		"info": "Example: `git commit --amend --author='Oscar Otero <oom@oscarotero.com>'`"
+	},
+	{
+		"title": "Show all ignored files",
+		"command": "git ls-files --others -i --exclude-standard"
+	},
+	{
+		"title": "Archive a branch to a zip file",
+		"command": "git archive <branch> --format=zip --output=<filename>",
+		"info": "Example: `git archive master --format=zip --output=master.zip`"
+	},
+	{
+		"title": "Visualize the version tree",
+		"command": "git log --pretty=oneline --graph --decorate --all"
+	},
+	{
+		"title": "Fetch a pull request by id to a local branch",
+		"command": "git fetch origin pull/<id>/head:<branch>",
+		"info": "Example: `git fetch origin pull/4/head:bugfix`"
+	},
+	{
+		"title": "Clean the files from .gitignore",
+		"command": "git clean -X -f"
+	},
+	{
+		"title": "Create a new branch without any history",
+		"command": "git checkout --orphan <branch>"
+	},
+	{
+		"title": "List commits and changes to a specific file",
+		"command": "git log --follow -p -- <file>"
+	},
+	{
+		"title": "Search a text or regex in tracked files",
+		"command": "git grep --heading --line-number <term>"
+	},
+	{
+		"title": "Show commits grouped by authors and title",
+		"command": "git shortlog"
+	},
+	{
+		"title": "List unpushed git commits",
+		"command": "git log --branches --not --remotes"
 	}
 ]
